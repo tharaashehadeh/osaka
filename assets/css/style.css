@@ -1,0 +1,103 @@
+:root{
+    --mainColor: #ff206e;
+}
+.header{
+    background-image: url('../img/bg_osaka.jpg');
+    background-size:cover;
+    background-position:center;
+}
+.header .header-content a{
+    color:var(--mainColor);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    transition:background-color 1s;
+    -webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    -ms-transition:background-color 1s;
+    -o-transition:background-color 1s;
+}
+.header .icon:hover {
+    background-color: var(--mainColor);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--mainColor);
+}
+.title h2{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: #cacaca;
+    font-weight: 900;
+}
+.title h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.about {
+    background-image: url('../img/light_dot.jpg');
+}
+.about .about-content p:first-of-type{
+    color: var(--mainColor);
+}
+/*Services*/
+.services{
+    background-image: url('../img/dark_dot.jpg');
+
+}
+.services .title h2 {
+    color: #222;
+}
+.services .title h3 {
+    color: #ffffff;
+    position: relative;
+}
+.services .service-item h3:after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+}
+.services .service-item:hover h3:after{
+width: 30%;
+}
+.service-item .icon{
+    background-color: black;
+    transition: background-color 1s;
+}
+.service-item:hover .icon{
+    background-color: var(--mainColor) !important;
+}
+.client img{
+width: 110px;
+height: 110px;
+}
+.carousel-indicators [data-bs-target] {
+   
+    height: 30px;
+    border-radius: 50% !important;
+    text-indent: 0%;
+}
+.nav-tabs {
+justify-content: center;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--mainColor);
+    border: none;
+}
+.nav-tabs .nav-link {
+    color: #000;
+    border: none;
+}
